@@ -2,6 +2,10 @@
 
 A playful classroom picker website for primary teachers. Teachers can sign in with Google, save separate class lists, spin a colorful wheel to choose one child, and instantly build random groups of different sizes.
 
+## Website
+
+Use the live site here: https://bleedingrobot.github.io/DPSgroupmaker/
+
 ## Features
 
 - Google sign-in for teachers using Google Identity Services
@@ -31,7 +35,7 @@ A playful classroom picker website for primary teachers. Teachers can sign in wi
 1. Open Google Cloud Console.
 2. Create or reuse a project.
 3. Configure an OAuth client for a web application.
-4. Add your local development URL (for example `http://localhost:5173`) to the allowed JavaScript origins.
+4. Add your local development URL (for example `http://localhost:5173`) and the live site origin (`https://bleedingrobot.github.io`) to the allowed JavaScript origins.
 5. Copy the client ID into `.env.local` as `VITE_GOOGLE_CLIENT_ID`.
 
 If no Google client ID is configured, the app still offers demo mode so the interface can be explored.

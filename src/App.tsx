@@ -212,7 +212,7 @@ function App() {
   const [isGoogleReady, setIsGoogleReady] = useState(false)
   const googleButtonRef = useRef<HTMLDivElement>(null)
   const spinTimeoutRef = useRef<number | null>(null)
-  const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID?.trim()
+  const clientId = (import.meta.env as Record<string, string | undefined>).VITE_GOOGLE_CLIENT_ID?.trim()
 
   const activeClass = useMemo(
     () => classes.find((classroom) => classroom.id === activeClassId) ?? classes[0] ?? null,
