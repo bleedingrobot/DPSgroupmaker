@@ -454,7 +454,7 @@ function App() {
   }
 
   const spinWheel = () => {
-    if (isSpinning || activeStudents.length === 0) {
+    if (isSpinning || !activeClass || activeStudents.length === 0) {
       return
     }
 
@@ -491,7 +491,7 @@ function App() {
   }
 
   const createGroups = () => {
-    if (activeStudents.length === 0) {
+    if (!activeClass || activeStudents.length === 0) {
       return
     }
 
